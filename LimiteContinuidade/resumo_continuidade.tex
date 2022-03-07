@@ -1,0 +1,44 @@
+\begin{tcolorbox}
+\begin{defi}Uma função é \textbf{contínua} em um número a se $\lim\limits_{x \to a}f(x)=f(a)$.
+\end{defi}
+\begin{defi}Uma função é \textbf{contínua à direita} em  um número a se $\lim\limits_{x \to a^+}f(x)=f(a)$ e \textbf{contínua à esquerda} de a se $\lim\limits_{x \to a^-}f(x)=f(a)$ 
+\end{defi}
+\begin{defi}
+Uma função $f$ é contínua em um intervalo se for contínua em todos
+os números do intervalo. (Se $f$ for definida somente de um lado da extremidade do intervalo, entendemos continuidade na extremidade como continuidade à direita ou à esquerda.)
+\end{defi}
+
+\begin{teorema}\label{operacoes}Se $f$ e $g$ são contínuas em $a$ então as funções abaixo também são contínuas em a:
+\begin{multicols}{3}
+\begin{enumerate}
+    \item $f+g$
+    \item $f-g$
+    \item $f\cdot g$
+    \item $\dfrac{f}{g}$ se $g(a)\neq 0$
+    \item $c\cdot f$
+\end{enumerate}
+\end{multicols}
+\end{teorema}
+\begin{teorema}\label{todas} Os tipos de funções a seguir são contínuas em todo número de seus domínios:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item Funções polinomiais. 
+    \item Funções trigonométricas 
+    \item Funções exponenciais.
+    \item Funções logarítmicas.
+\end{enumerate}
+\end{multicols}
+\end{teorema}
+\begin{teorema}\label{composta}
+Se $g$ for contínua em $a$ e $f$ em $g(a)$  então $f(g(x))$ é contínua em $a$.
+\end{teorema}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{teorema}[Teorema do valor intermediário]Se $f$ for contínua em $[a,b]$ e se $d$ for um número real entre $f(a)$ e $f(b)$, então existe pelo menos um $c$ em $[a,b]$ tal que $f(c)=d$.
+\end{teorema}
+\begin{figure}[H]
+    \centering
+    \input{FigurasTikz/TVI}
+\end{figure}
+\end{tcolorbox}

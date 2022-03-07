@@ -1,0 +1,47 @@
+\begin{tikzpicture}[scale=0.6]
+\coordinate (a) at (0.5, 0);
+
+\begin{axis}[
+ axis lines=middle,
+ ticklabel style={fill=white},
+ xmin=-0.5,xmax=3,
+ ymin=-0.25,ymax=2,
+ xlabel=$x$,ylabel=$y$,
+ domain=0.5:2.5,
+ samples=100,
+ smooth, 
+ yticklabels={,,},
+ xticklabels={,,},
+ width=10cm
+ ]
+\coordinate (a) at (0.5, 0);
+\coordinate (b) at (2.5, 0);
+\coordinate (fa) at (0, {0.25+1.5*exp(-(0.5-1)^2)});
+\coordinate (fb) at (0, {0.25+1.5*exp(-(2.5-1)^2)});
+\coordinate (d) at (0, {0.25+1.5*exp(-(1.8-1)^2)});
+\coordinate (c) at (1.8, 0);
+
+\addplot[red, domain=0:2.5, line width=1pt] {0.25+1.5*exp(-(1.8-1)^2)};
+\addplot[blue, line width=1pt] {0.25+1.5*exp(-(x-1)^2)};
+
+
+\draw[dashed] (a) -- (0.5,{0.25+1.5*exp(-(0.5-1)^2)});
+\draw[dashed] (fa) -- (0.5,{0.25+1.5*exp(-(0.5-1)^2)});
+\draw[dashed] (b) -- (2.5,{0.25+1.5*exp(-(2.5-1)^2)});
+\draw[dashed] (fb) -- (2.5,{0.25+1.5*exp(-(2.5-1)^2)});
+\draw[dashed] (c) -- (1.8,{0.25+1.5*exp(-(1.8-1)^2)});
+
+%\node[circle,draw=black, fill=black, inner sep=0pt,minimum size=5pt] at (0.5,{0.25+1.5*exp(-(0.5-1)^2)});
+\fill[black] (0.5,{0.25+1.5*exp(-(0.5-1)^2)})  circle (1.5pt);
+\fill[black] (1.8,{0.25+1.5*exp(-(1.8-1)^2)})  circle (1.5pt);
+\fill[black] (2.5,{0.25+1.5*exp(-(2.5-1)^2)})  circle (1.5pt);
+
+
+\node[below] at (a) {$a$};
+\node[left] at (fa) {$f(a)$};
+\node[below] at (b) {$b$};
+\node[left] at (fb) {$f(b)$};
+\node[left] at (d) {$d$};
+\node[below] at (c) {$c$};
+\end{axis}
+\end{tikzpicture}

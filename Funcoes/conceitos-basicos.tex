@@ -1,0 +1,70 @@
+\subsection*{Conceitos Básicos}
+\begin{tcolorbox}
+
+\begin{defi} Uma função de variável real a valores reais é uma função $f:X\longrightarrow \mathbb{R}$, onde $X\subset \mathbb{R}$. O conjunto $X$ é o domínio de $f$ e indica-se por $D_f$, ou seja, $D_f=X$. O conjunto dos números reais é o contradomínio. A imagem é o subconjunto  de $\mathbb{R}$, indicado por $\textrm{Im}_f$ e definido por $f(X)=\textrm{Im}_f=\{y\in\mathbb{R}: y=f(x), x\in X\}$.
+\end{defi}
+
+\begin{defi}Seja $f:X\longrightarrow \mathbb{R}$ uma função. O conjunto $G_f=\left\{(x,f(x))\in\mathbb{R}^2: x\in X\right\}$ denomina-se \textbf{gráfico} de $f$.
+\end{defi}
+
+
+
+\begin{defi}
+
+Uma função $f: X \rightarrow \mathbb{R}$  é dita \textbf{injetora} (injetiva)  se para cada $y\in\mathrm{Im}_f,$ existe um único $x\in D_f=X$ tal que $f(x)=y.$
+Ou seja, se $$f(x_1)=f(x_2)\Rightarrow x_1=x_2, \forall x_1, x_2\in\mathrm{D}_f.$$
+\end{defi}
+% \begin{defi}Função composta
+% \begin{figure}
+%     \centering
+%     \include{FigurasTikz/composta}
+% \end{figure}
+%\end{defi}
+\begin{defi}
+Seja $f: X \longrightarrow \mathbb{R}$ uma injetora. Então, a sua inversa $f^{-1}: f(X) \longrightarrow X$ é definida por  
+\begin{align*}
+    f^{-1}(y) \iff f(x)=y \quad  \forall y\in f(X)
+\end{align*}
+\end{defi}
+
+\begin{defi}
+Uma função $f: X \rightarrow \mathbb{R}$ é dita \textbf{sobrejetora} (sobrejetiva) se $f(X)=\mathbb{R}$.
+\end{defi}
+\begin{defi}
+Uma função $f: X \rightarrow \mathbb{R}$ é dita \textbf{bijetora} (bijetiva) se é injetora e sobrejetora.
+\end{defi}
+
+
+
+\begin{defi}
+Uma função $f: X \longrightarrow\mathbb{R}, X\subset\mathbb{R},$ é
+dita \textbf{monótona} se ela preserva (ou inverte) a relação de
+ordem. Sejam $x_1,x_2\in \mathbb{R}$, dizemos que $f$ é monótona
+\begin{enumerate}
+\item [(i)] \textbf{crescente} ou \textbf{estritamente crescente}, quando
+$x_1<x_2 \Rightarrow f(x_1)<f(x_2)$
+\item [(ii)]\textbf{decrescente} ou \textbf{estritamente decrescente}, quando
+$x_1<x_2 \Rightarrow f(x_1)>f(x_2)$
+\item [(iii)] \textbf{não-decrescente}, quando
+$x_1<x_2 \Rightarrow f(x_1)\leq f(x_2)$
+\item [(iv)]\textbf{monótona não-crescente}, quando
+$x_1<x_2 \Rightarrow f(x_1)\geq f(x_2)$
+\end{enumerate}
+\end{defi}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+
+\subsubsection*{Paridade de Funções}
+\begin{defi} Se $D_{f} \subseteq \mathbb{R}$ simétrico em relação à origem. Então $f$ é dita \textbf{par} se  $f(-x) = f(x), \forall x \in D_f$ e \textbf{impar} se $f(-x) = -f(x), \forall x \in D_f$.
+
+\begin{figure}[H]
+\centering
+\subfigure{
+    \input{FigurasTikz/grafico_par}}
+    \qquad
+\subfigure{
+\input{FigurasTikz/grafico_impar}}
+\end{figure}
+\end{defi}
+\end{tcolorbox}

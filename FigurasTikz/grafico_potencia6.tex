@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[
+ axis lines=middle,
+ ticklabel style={fill=white},
+ xmin=-1.5,xmax=1.5,
+ ymin=-1,ymax=5,
+ xlabel=$x$,ylabel=$y$,
+ domain=-1.4:1.4,
+ samples=30,
+ smooth,
+ xtick={-1,0,1},ytick={1},
+ yticklabels={,,},   xticklabels={,,},
+ width=10cm]
+\coordinate  (x2) at (1,1);
+\coordinate  (x1) at (-1,1);
+\addplot[blue] {1/x^2};
+
+
+\fill[black] (x2) circle (1.5pt);
+\fill[black] (x1) circle (1.5pt);
+
+\node[] at (axis cs:0.9,{1/(0.8)^2+1.5}) {$y=\dfrac{1}{x^2}$};
+
+
+\node[above right] at (x2) {$(1,1)$};
+\node[above left] at (x1) {$(-1,1)$};
+\end{axis}
+\end{tikzpicture}

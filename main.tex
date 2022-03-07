@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\input{structure}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\usepackage{authblk}
+\usepackage{blindtext}
+
+\begin{document}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{UFRPE - Departamaento de Matemática} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.1cm] % Thin top horizontal rule
+\huge Lista de Exercícios Cálculo NI: Parte II \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Leon Silva\\\href{mailto:leon.silva@ufrpe.br}{\textcolor{blue}{leon.silva@ufrpe.br}}} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+%% Parte I
+\section{Números reais}
+\input{Numeros/resumo_numeros}
+\section{Funções}
+%\subsection{Funções, Domínio e Imagem}
+\input{Funcoes/conceitos-basicos}
+\input{Funcoes/resumo_funcoes_elementares}
+
+\input{Funcoes/resumo_exponecial-log}
+\input{Funcoes/resumo_trigonometricas}
+\input{Funcoes/resumo-novos-graficos}
+\subsection{Exercícios}
+\input{Funcoes/problemas-functions}
+
+\section{Limites de funções}
+\input{LimiteContinuidade/resumo_limite}
+\subsection{Exercícios}
+\input{LimiteContinuidade/problemas-limite}
+
+% Parte II
+\section{Continuidade}
+\input{LimiteContinuidade/resumo_continuidade}
+\subsection{Exercícios}
+\input{LimiteContinuidade/problemas-continuidade}
+\section{Limites infinitos e no infinito. Assíntotas}
+\input{LimiteContinuidade/resumo_limite_infinitos}
+\subsection{Exercícios}
+
+\input{LimiteContinuidade/problemas-infinitos}
+
+%% Parte III
+\section{Derivada}
+\input{derivada}
+\input{Derivadas/problemas-derivada}
+ \section{Aplicações}
+\input{Derivadas/Aplicacoes/aplicacoes}
+% % \subsection{Aplicações à química}
+% % %\input{Aplicacoes/quimica}
+% % \section{Software}
+% % \input{Software/sage}
+\section{Respostas}
+\input{respostas}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
